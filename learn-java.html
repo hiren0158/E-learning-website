@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <div class="banner">
+                <div class="logo">Code <span>Mania</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="java-content">
+        <h1>Welcome to the Java Learning Section!</h1>
+        <p>In this section, you'll find tutorials, examples, and explanations to help you learn Java programming
+            language.</p>
+        
+
+
+            <section class="java-content">
+                <div class="container">
+                    <h2>Basic Java Syntax</h2>
+                    <p>Java is a powerful programming language known for its simplicity and readability. Let's break down the basic syntax of a Java program:</p>
+                    
+                    <div class="code-block">
+                        <pre><code class="java">
+            public class HelloWorld {
+                public static void main(String[] args) {
+                    // Print Hello World to the console
+                    System.out.println("Hello, World!");
+                }
+            }
+                        </code></pre>
+                        <button class="copy-button">Copy Code</button>
+                    </div>
+            
+                    <p>In the example above:</p>
+                    <ul>
+                        <li><strong><code>public class HelloWorld</code>:</strong> This line defines a class named <code>HelloWorld</code>. In Java, every application begins with at least one class, and the file name must match the class name.</li>
+                        <li><strong><code>public static void main(String[] args)</code>:</strong> This line declares the <code>main</code> method, which serves as the entry point for the Java program. The <code>main</code> method is where the program starts executing.</li>
+                        <li><strong><code>// Print Hello World to the console</code>:</strong> This is a comment. Comments are used to add explanatory notes to the code. They are ignored by the compiler and are intended for human readers.</li>
+                        <li><strong><code>System.out.println("Hello, World!");</code>:</strong> This line prints the string <code>"Hello, World!"</code> to the console. The <code>System.out.println()</code> statement is used to display output in the console.</li>
+                    </ul>
+            
+                    <p>This simple program prints <code>Hello, World!</code> to the console when executed. Let's dive deeper into each component:</p>
+                    <ul>
+                        <li><strong>Class Declaration:</strong> Every Java program starts with a class definition. In this example, we define a class named <code>HelloWorld</code>.</li>
+                        <li><strong>Main Method:</strong> The <code>main</code> method is the entry point of a Java program. It is a special method that the Java Virtual Machine (JVM) looks for when starting the program.</li>
+                        <li><strong>Comments:</strong> Comments are used to document code and improve readability. In Java, comments start with <code>//</code> for single-line comments and <code>/* */</code> for multi-line comments.</li>
+                        <li><strong>System.out.println:</strong> This statement is used to print text to the console. It displays the string <code>"Hello, World!"</code>.</li>
+                    </ul>
+                    <p>Understanding the basic syntax of a Java program is essential for getting started with Java programming. You can build upon this foundation to create more complex and functional applications.</p>
+            
+                    <div class="video-container">
+                        <div class="code-block">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yRpLlJmRo2w?si=GqnRxcCbCO1AgxdE" title="Java Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+            
+                        <div class="code-block">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lL2PXC1fmnQ?si=Lp9dBWWgTSW0JyzE" title="Java Programming Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <p>If you prefer video tutorials, check out the resources above for comprehensive Java programming tutorials for beginners.</p>
+                </div>
+            </section>
+            
+            <h2>Java Variables</h2>
+            <p>In Java, variables are used to store data. Let's take a look at an example:</p>
+            
+            <div class="code-block">
+                <pre><code class="java">
+            public class Example {
+                public static void main(String[] args) {
+                    // Declare and initialize a variable
+                    int num = 10;
+                    
+                    // Print the value of the variable
+                    System.out.println("The value of num is: " + num);
+                }
+            }
+                </code></pre>
+                <button class="copy-button" onclick="copyCode()">Copy Code</button>
+            </div>
+            
+            <p>In the example above:</p>
+            <ul>
+                <li><strong><code>int num = 10;</code>:</strong> This line declares a variable named <code>num</code> of type <code>int</code> and initializes it with the value <code>10</code>. Here, <code>int</code> is the data type for integer values.</li>
+                <li><strong><code>System.out.println("The value of num is: " + num);</code>:</strong> This line prints the value of the variable <code>num</code> to the console. The <code>System.out.println()</code> statement is used to display output in the console.</li>
+            </ul>
+            
+            <p>Understanding how to declare and use variables is fundamental in Java programming. Variables allow you to store and manipulate data, making your programs more dynamic and versatile.</p>
+            
+            <div class="video-container">
+                <div class="code-block">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LusTv0RlnSU" title="Java Variables Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            
+                <div class="video-block">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9RCuKrze_-k" title="Java Variable Types" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p>If you prefer video tutorials, check out the resources above for detailed explanations on Java variables.</p>
+            
+
+
+            <h1>Java Control Statements</h1>
+            <p>Java provides various control statements to control the flow of execution. Here are some examples:</p>
+            
+            <div class="code-block">
+                <pre><code class="java">
+            public class ControlStatements {
+                public static void main(String[] args) {
+                    // If-else statement
+                    int x = 10;
+                    if (x > 0) {
+                        System.out.println("x is positive");
+                    } else {
+                        System.out.println("x is non-positive");
+                    }
+                    
+                    // Switch statement
+                    int day = 3;
+                    switch (day) {
+                        case 1:
+                            System.out.println("Sunday");
+                            break;
+                        case 2:
+                            System.out.println("Monday");
+                            break;
+                        // Add more cases as needed
+                        default:
+                            System.out.println("Invalid day");
+                    }
+                    
+                    // Looping statements
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println("Iteration " + i);
+                    }
+                }
+            }
+                </code></pre>
+                <button class="copy-button">Copy Code</button>
+            </div>
+            
+            <p>In the code snippet above:</p>
+            <ul>
+                <li><strong>If-else statement:</strong> This statement checks whether the value of variable <code>x</code> is greater than 0. If it is, it prints "x is positive"; otherwise, it prints "x is non-positive".</li>
+                <li><strong>Switch statement:</strong> This statement evaluates the value of the variable <code>day</code> and executes the corresponding case. In this example, it prints the name of the day based on the value of <code>day</code>.</li>
+                <li><strong>Looping statements:</strong> The <code>for</code> loop is used to iterate from <code>0</code> to <code>4</code> and prints each iteration number.</li>
+            </ul>
+            
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/I5srDu75h_M?si=GxKlhMnBPf_zgM4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YPK6NYMJt_A?si=uk1J2cLbrKYFIAHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+            
+        <h2>Loop in Java</h2>
+        <p>In Java, loops are used to execute a block of code repeatedly. Here's an example of using a for loop to print
+            numbers from 1 to 5:</p>
+        <div class="code-block">
+            <pre><code class="java">
+public class LoopExample {
+    public static void main(String[] args) {
+        System.out.println("Printing numbers from 1 to 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>Output:</p>
+        <pre><code>
+Printing numbers from 1 to 5:
+1
+2
+3
+4
+5
+</code></pre>
+
+        <p>In the above example:</p>
+        <ul>
+            <li>The loop starts with initializing the variable <code>i</code> to 1.</li>
+            <li>It continues to execute the loop as long as the condition <code>i &lt;= 5</code> is true.</li>
+            <li>After each iteration, the value of <code>i</code> is incremented by 1.</li>
+        </ul>
+
+        <p>Java also provides other types of loops such as <code>while</code> and <code>do-while</code>. Here's an
+            example of using a <code>while</code> loop:</p>
+        <div class="code-block">
+            <pre><code class="java">
+public class WhileLoopExample {
+    public static void main(String[] args) {
+        int i = 1;
+        System.out.println("Printing numbers from 1 to 5 using while loop:");
+        while (i <= 5) {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+        
+        <p>Output:</p>
+        <pre><code>
+Printing numbers from 1 to 5 using while loop:
+1
+2
+3
+4
+5
+</code></pre>
+
+        <p>The <code>while</code> loop repeatedly executes a target statement as long as the specified condition is
+            true. It's used when the number of iterations is not known in advance.</p>
+
+        <p>Similarly, Java also provides a <code>do-while</code> loop which is similar to a <code>while</code> loop
+            except that it tests the condition at the end of the loop body. This ensures that the loop body is executed
+            at least once.</p>
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XHgC6Md8L9o?si=m6o4VQzUrRqh1TA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+    
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0r1SfRoLuzU?si=EjI6ZGWd2efJbz5x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+        <h2>Arrays in Java</h2>
+        <p>In Java, an array is a container object that holds a fixed number of values of a single data type. Arrays are
+            used to store multiple values in a single variable. Here's an example of declaring and initializing an
+            array:</p>
+        <div class="code-block">
+            <pre><code class="java">
+public class ArrayExample {
+    public static void main(String[] args) {
+        // Declare and initialize an array of integers
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        // Accessing elements of the array
+        System.out.println("Element at index 0: " + numbers[0]);
+        System.out.println("Element at index 2: " + numbers[2]);
+
+        // Modifying an element of the array
+        numbers[1] = 25;
+        System.out.println("Modified element at index 1: " + numbers[1]);
+
+        // Length of the array
+        System.out.println("Length of the array: " + numbers.length);
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>Output:</p>
+        <pre><code>
+Element at index 0: 10
+Element at index 2: 30
+Modified element at index 1: 25
+Length of the array: 5
+</code></pre>
+
+        <p>In the above example:</p>
+        <ul>
+            <li>We declare and initialize an array of integers <code>numbers</code> with five elements.</li>
+            <li>We access elements of the array using index notation, starting from index 0.</li>
+            <li>We modify the value of an element in the array by assigning a new value to it.</li>
+            <li>We use the <code>length</code> property to determine the length of the array.</li>
+        </ul>
+
+        <p>Java arrays can also hold other types of data, such as strings. Here's an example:</p>
+        <div class="code-block">
+            <pre><code class="java">
+public class StringArrayExample {
+    public static void main(String[] args) {
+        // Declare and initialize an array of strings
+        String[] names = {"Alice", "Bob", "Charlie", "David"};
+
+        // Accessing elements of the array
+        System.out.println("Element at index 1: " + names[1]);
+
+        // Modifying an element of the array
+        names[2] = "Eve";
+        System.out.println("Modified element at index 2: " + names[2]);
+
+        // Length of the array
+        System.out.println("Length of the array: " + names.length);
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+
+        <p>Output:</p>
+        <pre><code>
+Element at index 1: Bob
+Modified element at index 2: Eve
+Length of the array: 4
+
+</code></pre>
+
+        <p>Arrays are widely used in Java to store collections of data efficiently. They provide random access to
+            individual elements and support various operations such as traversal, modification, and searching.</p>
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NTHVTY6w2Co?si=59W87RI6Rkc9cpV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+    
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qMePCtjeqB4?si=99VCyRpa4egtou8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+        <h2>Recursion in Java</h2>
+        <p>Recursion is a programming technique where a method calls itself to solve a problem. In Java, recursion is
+            commonly used to solve problems that can be broken down into smaller, similar subproblems. Here's an example
+            of a recursive method to calculate the factorial of a number:</p>
+        <div class="code-block">
+            <pre><code class="java">
+public class FactorialExample {
+    public static void main(String[] args) {
+        int n = 5;
+        long factorial = factorial(n);
+        System.out.println("Factorial of " + n + " is: " + factorial);
+    }
+
+    // Recursive method to calculate factorial
+    public static long factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>Output:</p>
+        <pre><code>
+Factorial of 5 is: 120
+</code></pre>
+
+        <p>In the above example:</p>
+        <ul>
+            <li>We define a recursive method <code>factorial</code> that calculates the factorial of a non-negative
+                integer <code>n</code>.</li>
+            <li>If <code>n</code> is 0 or 1, the factorial is defined as 1 (base case).</li>
+            <li>Otherwise, the factorial is calculated by multiplying <code>n</code> with the factorial of
+                <code>n - 1</code> (recursive case).
+            </li>
+            <li>The method calls itself with a smaller argument (<code>n - 1</code>) until it reaches the base case.
+            </li>
+        </ul>
+
+        <p>Recursion can be a powerful technique, but it's important to ensure that recursive methods have proper
+            termination conditions to avoid infinite recursion.</p>
+
+        <p>Here's another example of recursion, where we calculate the Fibonacci sequence:</p>
+        <div class="code-block">
+            <pre><code class="java">
+public class FibonacciExample {
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.println("Fibonacci sequence up to " + n + ":");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+
+    // Recursive method to calculate Fibonacci number
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+
+        <p>Output:</p>
+        <pre><code>
+Fibonacci sequence up to 10:
+0 1 1 2 3 5 8 13 21 34
+</code></pre>
+
+        <p>Recursion can be an elegant solution for certain problems, but it may not always be the most efficient. It's
+            important to consider the trade-offs and design recursive algorithms carefully.</p>
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-bGIh-EPnt0?si=Fe4pF6OFWZRDT-uB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+    
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BNeOE1qMyRA?si=4-ccDln5eRASthK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+        <h2>Classes in Java</h2>
+        <p>In Java, a class is a blueprint for creating objects. It defines the properties and behaviors that objects of
+            the class will have. Here's an example of a simple class definition:</p>
+        <div class="code-block">
+            <pre><code class="java">
+// Define a class named "Person"
+public class Person {
+    // Instance variables (properties)
+    String name;
+    int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Method to display information about the person
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>In the above example:</p>
+        <ul>
+            <li>We define a class named <code>Person</code> with two instance variables: <code>name</code> and
+                <code>age</code>.
+            </li>
+            <li>We provide a constructor to initialize the instance variables when creating objects of the class.</li>
+            <li>We define a method <code>displayInfo()</code> to display information about a person.</li>
+        </ul>
+
+        <p>Once a class is defined, we can create objects (instances) of that class. Here's how we can create and use
+            objects of the <code>Person</code> class:</p>
+        <div class="code-block">
+            <pre><code class="java">
+public class Main {
+    public static void main(String[] args) {
+        // Create objects of the Person class
+        Person person1 = new Person("Alice", 25);
+        Person person2 = new Person("Bob", 30);
+
+        // Call methods on the objects
+        System.out.println("Information about person 1:");
+        person1.displayInfo();
+
+        System.out.println("Information about person 2:");
+        person2.displayInfo();
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>Output:</p>
+        <pre><code>
+Information about person 1:
+Name: Alice
+Age: 25
+Information about person 2:
+Name: Bob
+Age: 30
+</code></pre>
+
+        <p>Classes are fundamental building blocks in Java programming. They encapsulate data and behavior, providing a
+            way to model real-world entities in software.</p>
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0HIR0rzj8pQ?si=_GWjXxdlUuUpmKRx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+    
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FKJVe0xG_Ik?si=qriu4f8tAaFnZfjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+        <h2>Inheritance in Java</h2>
+        <p>In Java, inheritance is a mechanism by which one class can inherit properties and behaviors from another
+            class. The class that is inherited from is called the superclass or base class, and the class that inherits
+            is called the subclass or derived class.</p>
+
+        <p>Here's an example demonstrating inheritance:</p>
+        <div class="code-block">
+            <pre><code class="java">
+// Define a superclass named "Vehicle"
+class Vehicle {
+    String brand;
+    int year;
+
+    // Constructor
+    public Vehicle(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+
+    // Method to display vehicle information
+    public void displayInfo() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Year: " + year);
+    }
+}
+
+// Define a subclass named "Car" that inherits from "Vehicle"
+class Car extends Vehicle {
+    int mileage;
+
+    // Constructor
+    public Car(String brand, int year, int mileage) {
+        super(brand, year); // Call superclass constructor
+        this.mileage = mileage;
+    }
+
+    // Method to display car information, overriding the superclass method
+    @Override
+    public void displayInfo() {
+        super.displayInfo(); // Call superclass method
+        System.out.println("Mileage: " + mileage);
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>In the above example:</p>
+        <ul>
+            <li>We define a superclass <code>Vehicle</code> with two instance variables: <code>brand</code> and
+                <code>year</code>, and a method <code>displayInfo()</code> to display vehicle information.
+            </li>
+            <li>We define a subclass <code>Car</code> that inherits from <code>Vehicle</code>. The <code>Car</code>
+                class adds an additional instance variable <code>mileage</code>.</li>
+            <li>The subclass constructor calls the superclass constructor using <code>super()</code> and initializes its
+                own instance variable.</li>
+            <li>The subclass overrides the <code>displayInfo()</code> method of the superclass to include information
+                about mileage.</li>
+        </ul>
+
+        <p>We can create objects of the subclass and access both superclass and subclass members:</p>
+        <div class="code-block">
+            <pre><code class="java">
+public class Main {
+    public static void main(String[] args) {
+        // Create an object of the Car class
+        Car car = new Car("Toyota", 2020, 5000);
+
+        // Call method on the object
+        System.out.println("Information about the car:");
+        car.displayInfo();
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>Output:</p>
+        <pre><code>
+Information about the car:
+Brand: Toyota
+Year: 2020
+Mileage: 5000
+</code></pre>
+
+        <p>Inheritance allows us to create hierarchical relationships between classes, enabling code reuse and promoting
+            modularity and extensibility in object-oriented programming.</p>
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XSuybcFfLx4?si=GoFw-FcoITtimySi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+    
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sQavCfVF60A?si=dHjoO_jq8g2IHTxj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+        <h2>Packages in Java</h2>
+        <p>In Java, packages are used to organize classes into namespaces, providing a way to group related classes and
+            avoid naming conflicts. A package is a collection of related Java classes and interfaces.</p>
+
+        <p>Here's an example demonstrating the use of packages:</p>
+        <div class="code-block">
+            <pre><code class="java">
+// Define a package named "com.example"
+package com.example;
+
+// Define a class "MyClass" within the package
+public class MyClass {
+    public void display() {
+        System.out.println("This is MyClass within com.example package.");
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+
+
+        <p>In the above example:</p>
+        <ul>
+            <li>We define a package named <code>com.example</code> using the <code>package</code> keyword at the
+                beginning of the file.</li>
+            <li>We define a class named <code>MyClass</code> within the package.</li>
+            <li>The fully qualified name of <code>MyClass</code> is <code>com.example.MyClass</code>.</li>
+        </ul>
+
+        <p>To use the <code>MyClass</code> from another class, we import the package:</p>
+        <div class="code-block">
+            <pre><code class="java">
+// Import the com.example package
+import com.example.MyClass;
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create an object of MyClass
+        MyClass obj = new MyClass();
+
+        // Call the display method
+        obj.display();
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>Output:</p>
+        <pre><code>
+This is MyClass within com.example package.
+</code></pre>
+
+        <p>By organizing classes into packages, we can easily manage and maintain large-scale Java projects. Packages
+            also help in resolving naming conflicts and provide better code organization and reusability.</p>
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bua6LQO2vQ8?si=vOCXgczWOFz96ubR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+    
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/av816KIz8nM?si=ym6m0s6OBY8XimPJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+        <h2>Multithreading in Java</h2>
+        <p>Multithreading is a programming technique where multiple threads of execution run concurrently within a
+            single process. Java provides built-in support for multithreading through its <code>java.lang.Thread</code>
+            class and the <code>java.lang.Runnable</code> interface.</p>
+
+        <p>Here's an example demonstrating how to create and use threads in Java:</p>
+        <div class="code-block">
+            <pre><code class="java">
+// Define a class that implements the Runnable interface
+class MyRunnable implements Runnable {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Thread: " + Thread.currentThread().getName() + ", Count: " + i);
+            try {
+                // Introduce a short delay
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Thread interrupted");
+            }
+        }
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create objects of the MyRunnable class
+        MyRunnable myRunnable1 = new MyRunnable();
+        MyRunnable myRunnable2 = new MyRunnable();
+
+        // Create threads and associate them with the runnable objects
+        Thread thread1 = new Thread(myRunnable1);
+        Thread thread2 = new Thread(myRunnable2);
+
+        // Start the threads
+        thread1.start();
+        thread2.start();
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+        <p>Output:</p>
+        <pre><code>
+Thread: Thread-0, Count: 1
+Thread: Thread-1, Count: 1
+Thread: Thread-0, Count: 2
+Thread: Thread-1, Count: 2
+Thread: Thread-0, Count: 3
+Thread: Thread-1, Count: 3
+Thread: Thread-0, Count: 4
+Thread: Thread-1, Count: 4
+Thread: Thread-0, Count: 5
+Thread: Thread-1, Count: 5
+</code></pre>
+
+        <p>In the above example:</p>
+        <ul>
+            <li>We define a class <code>MyRunnable</code> that implements the <code>Runnable</code> interface. The
+                <code>run()</code> method defines the task to be executed by the thread.
+            </li>
+            <li>We create two instances of <code>MyRunnable</code> and associate them with separate threads.</li>
+            <li>We start the threads using the <code>start()</code> method, which internally calls the
+                <code>run()</code> method of the <code>Runnable</code> object.
+            </li>
+            <li>Each thread executes the <code>run()</code> method independently, resulting in concurrent execution.
+            </li>
+        </ul>
+
+        <p>Multithreading allows us to perform multiple tasks concurrently, improving the performance and responsiveness
+            of applications.</p>
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YDH7f9dTXAs?si=fkJd294-yCXbo2mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                    </code>
+                </div>
+    
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wqJocu5yPY0?si=j07A63Pa_fkbeoVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+        <h2>Java Thread Methods</h2>
+        <p>The <code>java.lang.Thread</code> class provides several methods for managing threads and controlling their
+            execution. Here are some commonly used methods:</p>
+
+        <ul>
+            <li><code>start()</code>: Starts the execution of the thread. The <code>run()</code> method of the thread is
+                invoked asynchronously.</li>
+            <li><code>run()</code>: Entry point for the thread. This method contains the code to be executed by the
+                thread. It must be overridden when implementing the <code>Runnable</code> interface or extending the
+                <code>Thread</code> class.
+            </li>
+            <li><code>sleep(long millis)</code>: Causes the current thread to sleep for the specified number of
+                milliseconds. This method can be used for introducing delays in thread execution.</li>
+            <li><code>join()</code>: Waits for the thread to die. The current thread will wait until the thread on which
+                <code>join()</code> is called completes its execution.
+            </li>
+            <li><code>interrupt()</code>: Interrupts the thread, causing it to stop if it's in a blocked or waiting
+                state. It sets the interrupt status flag of the thread.</li>
+            <li><code>isAlive()</code>: Checks whether the thread is alive (has been started and has not yet died).</li>
+            <li><code>setName(String name)</code>: Sets the name of the thread.</li>
+            <li><code>getName()</code>: Returns the name of the thread.</li>
+            <li><code>setPriority(int priority)</code>: Sets the priority of the thread. The valid range of priority is
+                1 to 10, with 1 being the lowest priority and 10 being the highest.</li>
+            <li><code>getPriority()</code>: Returns the priority of the thread.</li>
+        </ul>
+
+        <p>Here's an example demonstrating the use of some of these methods:</p>
+        <div class="code-block">
+            <pre><code class="java x">
+public class ThreadMethodsExample {
+    public static void main(String[] args) {
+        Thread thread = new Thread(() -&gt; {
+            for (int i = 1; i &lt;= 5; i++) {
+                System.out.println("Thread: " + Thread.currentThread().getName() + ", Count: " + i);
+                try {
+                    Thread.sleep(1000); // Introduce a delay
+                } catch (InterruptedException e) {
+                    System.out.println("Thread interrupted");
+                }
+            }
+        });
+
+        thread.setName("MyThread"); // Set thread name
+        thread.setPriority(Thread.MAX_PRIORITY); // Set thread priority
+
+        thread.start(); // Start the thread
+
+        // Wait for the thread to complete its execution
+        try {
+            thread.join();
+        } catch (InterruptedException e) {
+            System.out.println("Main thread interrupted");
+        }
+
+        // Check if the thread is alive
+        if (thread.isAlive()) {
+            System.out.println("Thread is still alive");
+        } else {
+            System.out.println("Thread has completed its execution");
+        }
+    }
+}
+</code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+
+        <p>Output (may vary due to scheduling and timing):</p>
+        <pre><code>
+Thread: MyThread, Count: 1
+Thread: MyThread, Count: 2
+Thread: MyThread, Count: 3
+Thread: MyThread, Count: 4
+Thread: MyThread, Count: 5
+Thread has completed its execution
+</code></pre>
+
+        <p>In the above example, we create a thread, set its name and priority, start it, wait for it to complete using
+            <code>join()</code>, and check its status using <code>isAlive()</code>.
+        </p>
+        <div class="video-container">
+            <div class="code-block">
+                <code class="java">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rVDWb0stlfQ?si=jlorv1b-bEzRZ3mb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </code>
+            </div>
+
+            <div class="code-block">
+                <code class="java">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YcTHsIm97lU?si=o8u93hFzXhfgZ7uG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </code>
+            </div>
+        </div>
+        <h2>Try-Catch Block in Java</h2>
+        <p>In Java, exceptions are runtime anomalies that occur during the execution of a program. They disrupt the
+            normal flow of the program. The try-catch block is used to handle such exceptions.</p>
+
+        <p>The syntax of a try-catch block is as follows:</p>
+        <pre><code class="java">
+try {
+    // Code that may throw an exception
+} catch (ExceptionType e) {
+    // Exception handling code
+}
+        </code></pre>
+
+        <p>Here's an example demonstrating the use of try-catch block in Java:</p>
+
+        <div class="code-block">
+            <pre><code class="java">
+public class TryCatchExample {
+    public static void main(String[] args) {
+        try {
+            int[] numbers = {1, 2, 3};
+            System.out.println(numbers[4]); // Accessing index out of bounds
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+}
+            </code></pre>
+            <button class="copy-button">Copy Code</button>
+        </div>
+        
+
+        <p>In this example:</p>
+        <ul>
+            <li>We have a try block that contains the code which may throw an exception.</li>
+            <li>We attempt to access an element at index 4 in an array <code>numbers</code>. This may cause an
+                <code>ArrayIndexOutOfBoundsException</code> because the array has only three elements.
+            </li>
+            <li>If an exception occurs within the try block, it's caught by the catch block.</li>
+            <li>In the catch block, we handle the <code>ArrayIndexOutOfBoundsException</code> by printing a message
+                indicating the exception.</li>
+        </ul>
+        <div class="video-container">
+            <div class="code-block">
+                <code class="java">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A7lYfo9H_6E?si=5wDlIRNZTJKdFFdR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </code>
+            </div>
+
+            <div class="code-block">
+                <code class="java">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/osEjmECD8bI?si=6zG5w9-iigVxLSdp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </code>
+            </div>
+        </div>
+        <!-- Start from here -->
+        <h2>Java Collection Framework</h2>
+        <p>The Java Collection Framework provides a set of interfaces and classes to store, manipulate, and retrieve
+            groups of objects. It includes several classes like <code>ArrayList</code>, <code>LinkedList</code>,
+            <code>HashMap</code>, <code>HashSet</code>, etc., that implement various collection types.
+        </p>
+
+        <p>Key interfaces in the Java Collection Framework include:</p>
+        <ul>
+            <li><strong>List:</strong> An ordered collection that allows duplicate elements. Implementations include
+                <code>ArrayList</code>, <code>LinkedList</code>, etc.
+            </li>
+            <li><strong>Set:</strong> A collection that does not allow duplicate elements. Implementations include
+                <code>HashSet</code>, <code>LinkedHashSet</code>, etc.
+            </li>
+            <li><strong>Map:</strong> A mapping from keys to values. Implementations include <code>HashMap</code>,
+                <code>LinkedHashMap</code>, <code>TreeMap</code>, etc.
+            </li>
+        </ul>
+
+        <p>Here's an example demonstrating the use of the <code>ArrayList</code> class:</p>
+
+        <div class="code-block">
+            <pre><code class="java">
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        // Create an ArrayList of strings
+        ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
+
+        // Add elements to the ArrayList
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Orange");
+
+        // Print all elements
+        for (String fruit : list) {
+            System.out.println(fruit);
+        }
+    }
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+</div>
+        
+
+        <p>In this example, we create an <code>ArrayList</code> to store strings, add elements to it, and then iterate
+            over the list to print all elements.</p>
+        <!-- End here -->
+        <div class="video-container">
+            <div class="code-block">
+                <code class="java">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VphowcSkBX4?si=3P7JQHlL1nAxp60Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </code>
+            </div>
+
+            <div class="code-block">
+                <code class="java">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s8yrPZlvNP0?si=PBgQthAy5S0PpOns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </code>
+            </div>
+        </div>
+
+        <!-- Start from here -->
+        <h2>File Handling in Java</h2>
+        <p>In Java, file handling allows you to read from and write to files on the system. It involves various classes
+            and methods provided by the <code>java.io</code> package.</p>
+
+        <p>Commonly used classes for file handling in Java include:</p>
+
+        <ul>
+            <li><strong>File:</strong> Represents the files and directories on the system.</li>
+            <li><strong>FileInputStream:</strong> Used for reading data from files as bytes.</li>
+            <li><strong>FileOutputStream:</strong> Used for writing data to files as bytes.</li>
+            <li><strong>BufferedReader:</strong> Used for reading text from character-input streams.</li>
+            <li><strong>BufferedWriter:</strong> Used for writing text to character-output streams.</li>
+        </ul>
+
+        <p>Here's an example demonstrating how to read text from a file using <code>FileReader</code> and
+            <code>BufferedReader</code>:
+        </p>
+
+        <div class="code-block">
+            <pre><code class="java">
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadFileExample {
+    public static void main(String[] args) {
+        try {
+            FileReader fileReader = new FileReader("example.txt");
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String line;
+
+            while ((line = bufferedReader.readLine()) != null) {
+                System.out.println(line);
+            }
+
+            bufferedReader.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred while reading the file: " + e.getMessage());
+        }
+    }
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+</div>
+    
+
+        <p>In this example, we use <code>FileReader</code> and <code>BufferedReader</code> to read text from a file
+            named <code>example.txt</code>. We then print each line of the file to the console.</p>
+            <div class="video-container">
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vy2l3lGAb2I?si=Q8K38fa8r8bqsfDV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+    
+                <div class="code-block">
+                    <code class="java">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VJgCjLuU4e8?si=a6Hz34mVWklFIGPz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </code>
+                </div>
+            </div>
+
+        <!-- End here -->
+
+
+        <!-- Add more Java content as needed -->
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Function to copy text to clipboard
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+
+        // Add event listeners to copy buttons
+        document.querySelectorAll('.copy-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const codeBlock = button.previousElementSibling.querySelector('code');
+                copyToClipboard(codeBlock.innerText);
+                alert('Code copied to clipboard!');
+            });
+        });
+    </script>
+</body>
+
+</html>

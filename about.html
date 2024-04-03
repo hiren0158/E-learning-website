@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            margin-right: auto;
+        }
+
+        .logo span {
+            color: yellow;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+        }
+
+        .about-section {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-section h2 {
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .about-section p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Code <span>Mania</span></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./comming.html">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to <span style="color: #e83e8c;">Code Mania</span>, your go-to resource for learning programming
+                languages such as <span style="color: #007bff;">Java</span>, <span
+                    style="color: #28a745;">Python</span>, and <span style="color: #6610f2;">C++</span>.</p>
+            <p>At <span style="color: #e83e8c;">Code Mania</span>, we strive to provide high-quality tutorials,
+                examples, and resources to help you master programming concepts and become a better developer.</p>
+            <p>Whether you're a beginner just starting your coding journey or an experienced programmer looking to
+                expand your skills, we have something for everyone.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Code Mania. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

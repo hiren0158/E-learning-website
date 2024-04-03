@@ -1,0 +1,240 @@
+.hero {
+
+
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 15vh;
+  margin-top: -20px;
+
+
+
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo {
+  margin: auto 3rem;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+span {
+  color: yellow;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 2rem;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body {
+  background-image: url('hhome.jpeg');
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.content p {
+  margin: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+
+}
+
+button {
+  width: 200px;
+  margin: 1.2rem 1.5rem;
+  padding: 0.8rem 1rem;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: inset 0 0 0 #009688;
+  transition: 0.6s ease-out;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: inset 200px 0 0 #009688;
+
+}
+
+
+
+nav ul li a::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #fff;
+  transition: 0.5s ease-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.cpp-content {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.cpp-content h1 {
+  color: #333;
+}
+
+.cpp-content h2 {
+  color: #555;
+}
+
+.cpp-content p {
+  color: #777;
+}
+
+.cpp-content pre {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+
+.java-content {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.java-content h1 {
+  color: #333;
+}
+
+.java-content h2 {
+  color: #555;
+}
+
+.java-content p {
+  color: #777;
+}
+
+.java-content pre {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.python-content {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.python-content h1 {
+  color: #333;
+}
+
+.python-content h2 {
+  color: #555;
+}
+
+.python-content p {
+  color: #777;
+}
+
+.python-content pre {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+
+.copy-button {
+  width: 150px;
+  margin: 1.2rem 1.5rem;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid rgb(25, 26, 25);
+  border-radius: 25px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #e64f82;
+  font-weight: bold;
+  box-shadow: inset 0 0 0 #88d6e6;
+  transition: 0.6s ease-out;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  box-shadow: inset 200px 0 0 #a2d9e2f4;
+}
+
+
+.video-container {
+  display: flex;
+  overflow-x: auto;
+  /* Horizontal scrollbar will appear if needed */
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+  white-space: nowrap;
+  /* Prevent wrapping of elements */
+  justify-content: space-evenly;
+}
+
+.code-block {
+  flex: 0 0 auto;
+  /* Allow container to grow as needed */
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.code-block:last-child {
+  margin-right: 0;
+  /* Remove right margin from the last video */
+  justify-content: center;
+}
+
+.code-block iframe {
+  width: 560px;
+  /* Set the width of each video */
+  height: 315px;
+  /* Set the height of each video */
+}

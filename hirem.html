@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="code-block">
+        <pre><code class="java x">
+public class ThreadMethodsExample {
+public static void main(String[] args) {
+    Thread thread = new Thread(() -&gt; {
+        for (int i = 1; i &lt;= 5; i++) {
+            System.out.println("Thread: " + Thread.currentThread().getName() + ", Count: " + i);
+            try {
+                Thread.sleep(1000); // Introduce a delay
+            } catch (InterruptedException e) {
+                System.out.println("Thread interrupted");
+            }
+        }
+    });
+
+    thread.setName("MyThread"); // Set thread name
+    thread.setPriority(Thread.MAX_PRIORITY); // Set thread priority
+
+    thread.start(); // Start the thread
+
+    // Wait for the thread to complete its execution
+    try {
+        thread.join();
+    } catch (InterruptedException e) {
+        System.out.println("Main thread interrupted");
+    }
+
+    // Check if the thread is alive
+    if (thread.isAlive()) {
+        System.out.println("Thread is still alive");
+    } else {
+        System.out.println("Thread has completed its execution");
+    }
+}
+}
+</code></pre>
+        <button class="copy-button">Copy Code</button>
+    </div>
+    <script>
+        // Function to copy text to clipboard
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+
+        // Add event listeners to copy buttons
+        document.querySelectorAll('.copy-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const codeBlock = button.previousElementSibling.querySelector('code');
+                copyToClipboard(codeBlock.innerText);
+                alert('Code copied to clipboard!');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

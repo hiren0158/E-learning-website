@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .logo span {
+            color: yellow;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .blog-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .blog-post p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .blog-post a {
+            color: #e64f82;
+            text-decoration: none;
+        }
+
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Code <span>Mania</span></div>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="blog-section">
+    <div class="container">
+        <h1>Latest Blog Posts</h1>
+        
+        <div class="blog-post">
+            <h2>Introduction to Python Programming</h2>
+            <p>Python is a versatile and widely-used programming language. It is known for its simplicity and readability, making it an excellent choice for beginners...</p>
+            <a href="#">Read more</a>
+        </div>
+        
+        <div class="blog-post">
+            <h2>Getting Started with Java</h2>
+            <p>Java is a powerful object-oriented programming language. It is widely used for developing web applications, mobile applications, and enterprise software...</p>
+            <a href="#">Read more</a>
+        </div>
+        
+        <div class="blog-post">
+            <h2>C++ Programming Basics</h2>
+            <p>C++ is a popular programming language known for its performance and flexibility. It is commonly used for system programming, game development, and high-performance applications...</p>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Code Mania. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

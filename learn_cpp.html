@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn C++</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <div class="banner">
+        <div class="logo">Code <span>Mania</span></div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="cpp-content">
+    <h1>Welcome to the C++ Learning Section!</h1>
+    <p>In this section, you'll find tutorials, examples, and explanations to help you learn C++ programming language.
+    </p>
+
+    <h2>Basic C++ Syntax</h2>
+<div class="code-block">
+    <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    // Print Hello World to the console
+    std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+</div>
+
+<p>In the code above:</p>
+<ul>
+    <li><strong>#include &lt;iostream&gt;</strong>: This line includes the standard input/output stream library, which provides functionality for input and output operations.</li>
+    <li><strong>int main()</strong>: This is the main function of the program. It serves as the entry point for execution.</li>
+    <li><strong>std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;</strong>: This line prints "Hello World!" to the console using the <code>std::cout</code> stream. The <code>&lt;&lt;</code> operator is used for output, and <code>std::endl</code> is used to insert a newline character.</li>
+    <li><strong>return 0;</strong>: This line indicates that the program execution was successful and returns a status code of <code>0</code> to the operating system.</li>
+</ul>
+
+<div class="video-container">
+    <div class="code-block">
+        <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/McojvctVsUs?si=MhVEtFrGanbsD1uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </code>
+    </div>
+
+    <div class="code-block">
+        <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dCNSDeeKCfs?si=AhdJGNr1NNrp3RK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </code>
+    </div>
+</div>
+
+
+<h2>C++ Variables</h2>
+<p>In C++, variables are used to store data. They have a specific data type that determines what kind of data they can hold. Here's an example:</p>
+<div class="code-block">
+    <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    // Declare and initialize a variable
+    int num = 10;
+    
+    // Print the value of the variable
+    std::cout &lt;&lt; "The value of num is: " &lt;&lt; num &lt;&lt; std::endl;
+    
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+</div>
+
+<p>In the code above:</p>
+<ul>
+    <li><strong>#include &lt;iostream&gt;</strong>: This line includes the standard input/output stream library, which provides functionality for input and output operations.</li>
+    <li><strong>int main()</strong>: This is the main function of the program. It serves as the entry point for execution.</li>
+    <li><strong>int num = 10;</strong>: This line declares a variable named <code>num</code> of type <code>int</code> and initializes it with the value <code>10</code>.</li>
+    <li><strong>std::cout &lt;&lt; "The value of num is: " &lt;&lt; num &lt;&lt; std::endl;</strong>: This line prints the value of the variable <code>num</code> to the console using the <code>std::cout</code> stream.</li>
+    <li><strong>return 0;</strong>: This line indicates that the program execution was successful and returns a status code of <code>0</code> to the operating system.</li>
+</ul>
+
+<div class="video-container">
+    <div class="code-block">
+        <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jigb6W35zHc?si=qmAs4KCgieIlK5Ka" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   </code>
+    </div>
+
+    <div class="code-block">
+        <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fZbSl58orNs?si=wFnYiuCMWUmm_Fi_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </code>
+    </div>
+</div>
+
+
+    <!-- Start from here -->
+    <h2>Data Types in C++</h2>
+    <p>In C++, data types specify the type of data that variables can hold. C++ provides several built-in data types to
+      handle different types of data. These data types can be broadly categorized into the following:</p>
+
+    <ul>
+      <li><strong>Primitive Data Types:</strong> Basic data types provided by the language.</li>
+      <li><strong>Derived Data Types:</strong> Derived from primitive data types or other derived data types.</li>
+      <li><strong>User-defined Data Types:</strong> Defined by the user.</li>
+    </ul>
+
+    <p>Commonly used primitive data types in C++ include:</p>
+
+    <ul>
+      <li><strong>int:</strong> Integer type for whole numbers.</li>
+      <li><strong>float:</strong> Floating-point type for decimal numbers.</li>
+      <li><strong>double:</strong> Double-precision floating-point type.</li>
+      <li><strong>char:</strong> Character type for single characters.</li>
+      <li><strong>bool:</strong> Boolean type representing true or false values.</li>
+    </ul>
+
+    <p>Here's an example demonstrating the use of primitive data types in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+int main() {
+    int age = 25;
+    float height = 5.8;
+    char grade = 'A';
+    bool isStudent = true;
+
+    std::cout &lt;&lt; "Age: " &lt;&lt; age &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Height: " &lt;&lt; height &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Grade: " &lt;&lt; grade &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Is Student? " &lt;&lt; isStudent &lt;&lt; std::endl;
+
+    return 0;
+}
+    </code></pre>
+      <button class="copy-button">Copy Code</button>
+
+    </div>
+
+    <p>In this example, we declare variables of different data types (<code>int</code>, <code>float</code>,
+      <code>char</code>, <code>bool</code>) and print their values to the console.
+    </p>
+    <div class="video-container">
+      <div class="code-block">
+          <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MiK5tamc-HE?si=8ipZoP6wDq8GuIZh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </code>
+      </div>
+
+      <div class="code-block">
+          <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z4zv2NgzDK0?si=J9d5bgmiYFS7vPJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+          </code>
+      </div>
+  </div>
+
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>Operators in C++</h2>
+    <p>In C++, operators are symbols that perform operations on operands. C++ supports a wide range of operators, which
+      can be categorized into the following types:</p>
+
+    <ul>
+      <li><strong>Arithmetic Operators:</strong> Perform arithmetic operations like addition, subtraction,
+        multiplication, division, etc.</li>
+      <li><strong>Relational Operators:</strong> Compare the values of operands.</li>
+      <li><strong>Logical Operators:</strong> Perform logical operations on Boolean operands.</li>
+      <li><strong>Assignment Operators:</strong> Assign values to variables.</li>
+      <li><strong>Increment and Decrement Operators:</strong> Increment or decrement the value of a variable.</li>
+      <li><strong>Conditional Operator:</strong> Also known as the ternary operator, it is used for conditional
+        expressions.</li>
+      <li><strong>Bitwise Operators:</strong> Perform bitwise operations on binary representations of operands.</li>
+    </ul>
+
+    <p>Here's an example demonstrating the usage of various operators in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    int a = 10, b = 5;
+    int sum = a + b; // Addition
+    int difference = a - b; // Subtraction
+    int product = a * b; // Multiplication
+    int quotient = a / b; // Division
+    int remainder = a % b; // Modulus
+
+    bool isEqual = (a == b); // Equal to
+    bool isGreater = (a > b); // Greater than
+    bool isLess = (a < b); // Less than
+
+    bool logicalAnd = (a && b); // Logical AND
+    bool logicalOr = (a || b); // Logical OR
+    bool logicalNot = !a; // Logical NOT
+
+    int x = 5;
+    x += 2; // Compound assignment (x = x + 2)
+    x++; // Increment
+    x--; // Decrement
+
+    int result = (a > b) ? a : b; // Conditional operator
+
+    int bitwiseAnd = a & b; // Bitwise AND
+    int bitwiseOr = a | b; // Bitwise OR
+    int bitwiseXor = a ^ b; // Bitwise XOR
+    int bitwiseComplement = ~a; // Bitwise complement
+    int leftShift = a << 1; // Left shift
+    int rightShift = a >> 1; // Right shift
+
+    std::cout << "Sum: " << sum << std::endl;
+    std::cout << "Difference: " << difference << std::endl;
+    std::cout << "Product: " << product << std::endl;
+    std::cout << "Quotient: " << quotient << std::endl;
+    std::cout << "Remainder: " << remainder << std::endl;
+
+    // Print other operator results...
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+  </div>
+   
+
+    <p>This example demonstrates the usage of various arithmetic, relational, logical, assignment, increment, decrement,
+      conditional, and bitwise operators in C++.</p>
+      <div class="video-container">
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JBgZxnAj4hg?si=cj7D03dreBQ6CmV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+            </code>
+        </div>
+
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZcoL2TxqrsE?si=8cuHnRpm5Elz-lq2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </code>
+        </div>
+    </div>
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>If-Else Statement in C++</h2>
+    <p>In C++, the <code>if</code> statement is used for conditional execution of code based on a condition. If the
+      condition evaluates to true, the code inside the <code>if</code> block is executed; otherwise, it is skipped.
+      Optionally, you can use the <code>else</code> statement to specify an alternative code block to execute if the
+      condition evaluates to false.</p>
+
+    <p>The syntax of the <code>if</code> statement is as follows:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+if (condition) {
+    // Code to be executed if condition is true
+} else {
+    // Code to be executed if condition is false
+}
+    </code></pre>
+    </div>
+
+    <p>Here's an example demonstrating the usage of the <code>if-else</code> statement in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    int age = 20;
+
+    if (age &gt;= 18) {
+        std::cout &lt;&lt; "You are eligible to vote." &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; "You are not eligible to vote." &lt;&lt; std::endl;
+    }
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+    </div>
+
+    <p>In this example, if the value of <code>age</code> is greater than or equal to 18, the message "You are eligible
+      to vote." is printed; otherwise, the message "You are not eligible to vote." is printed.</p>
+      <div class="video-container">
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cyB3HNlQyjY?si=moTBr1uqFzQ2470i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </code>
+        </div>
+
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/fjCyOjGFfU0?si=nO5-KzAYC9B_2NWL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </code>
+        </div>
+    </div>
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>Switch Statement in C++</h2>
+    <p>In C++, the <code>switch</code> statement is used for multi-way branching. It provides a convenient way to
+      execute different blocks of code based on the value of an expression.</p>
+
+    <p>The syntax of the <code>switch</code> statement is as follows:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+switch (expression) {
+    case constant1:
+        // Code to be executed if expression equals constant1
+        break;
+    case constant2:
+        // Code to be executed if expression equals constant2
+        break;
+    // Add more cases as needed...
+    default:
+        // Code to be executed if expression does not match any case
+}
+    </code></pre>
+    </div>
+
+    <p>Here's an example demonstrating the usage of the <code>switch</code> statement in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    int day = 3;
+    std::string dayName;
+
+    switch (day) {
+        case 1:
+            dayName = "Monday";
+            break;
+        case 2:
+            dayName = "Tuesday";
+            break;
+        case 3:
+            dayName = "Wednesday";
+            break;
+        case 4:
+            dayName = "Thursday";
+            break;
+        case 5:
+            dayName = "Friday";
+            break;
+        case 6:
+            dayName = "Saturday";
+            break;
+        case 7:
+            dayName = "Sunday";
+            break;
+        default:
+            dayName = "Invalid day";
+    }
+
+    std::cout << "Day: " << dayName << std::endl;
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+
+    </div>
+
+    <p>In this example, based on the value of the <code>day</code> variable, different blocks of code are executed to
+      assign the corresponding day name to the <code>dayName</code> variable.</p>
+      <div class="video-container">
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/G80-j_xnE_8?si=Vg6KQGA6RH8jC8HN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </code>
+        </div>
+
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7X33c1zmfPQ?si=OlgT6-iQPA3F6cD9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </code>
+        </div>
+    </div>
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>Loop in C++</h2>
+    <p>In C++, loops are used to execute a block of code repeatedly until a specified condition is met. C++ provides
+      several types of loops:</p>
+
+    <ul>
+      <li><strong>for loop:</strong> Executes a block of code a specified number of times.</li>
+      <li><strong>while loop:</strong> Executes a block of code repeatedly as long as a given condition is true.</li>
+      <li><strong>do-while loop:</strong> Executes a block of code once and then repeatedly executes the block as long
+        as a given condition is true.</li>
+    </ul>
+
+    <p>Here's an example demonstrating the use of the <strong>for loop</strong> in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    // Example: Print numbers from 1 to 5
+    for (int i = 1; i &lt;= 5; i++) {
+        std::cout &lt;&lt; i &lt;&lt; std::endl;
+    }
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+    </div>
+
+    <p>In this example, we use a <code>for</code> loop to print numbers from 1 to 5. The loop starts with initializing
+      <code>i</code> to 1, checks the condition <code>i &lt;= 5</code>, executes the block of code, and increments
+      <code>i</code> after each iteration.
+    </p>
+    <div class="video-container">
+      <div class="code-block">
+          <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a7dfSBrTZtE?si=Te4Hl_PCm8Ww1THW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+          </code>
+      </div>
+
+      <div class="code-block">
+          <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jdg-W5Y4TTg?si=OOCOB7LRMQeGcjvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </code>
+      </div>
+  </div>
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>Function in C++</h2>
+    <p>In C++, a function is a block of code that performs a specific task. Functions provide modularity and reusability
+      to a program by allowing you to encapsulate code into manageable units.</p>
+
+    <p>The syntax of a function declaration in C++ is as follows:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+return_type function_name(parameter_list) {
+    // Function body
+}
+    </code></pre>
+    </div>
+
+    <p>Here's an example demonstrating the declaration and usage of a function in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+// Function declaration
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1 = 5, num2 = 3;
+    
+    // Function call
+    int sum = add(num1, num2);
+    
+    std::cout &lt;&lt; "Sum: " &lt;&lt; sum &lt;&lt; std::endl;
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+  </div>
+  
+
+    <p>In this example, we define a function <code>add</code> that takes two integer parameters <code>a</code> and
+      <code>b</code> and returns their sum. We then call this function from the <code>main</code> function to compute
+      the sum of two numbers.
+    </p>
+    <div class="video-container">
+      <div class="code-block">
+          <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/83KtncYgHYQ?si=lvazMFpKzH5zaIL5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+          </code>
+      </div>
+
+      <div class="code-block">
+          <code class="java">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TcNBtrG1We4?si=A3L9ZWYW1uMChRjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </code>
+      </div>
+  </div>
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>Arrays in C++</h2>
+    <p>In C++, an array is a collection of elements of the same data type stored in contiguous memory locations. Arrays
+      provide a convenient way to store and access multiple values of the same type.</p>
+
+    <p>The syntax to declare an array in C++ is as follows:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+data_type array_name[array_size];
+    </code></pre>
+    </div>
+
+    <p>Here's an example demonstrating the declaration and usage of arrays in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    // Declaration and initialization of an array
+    int numbers[5] = {10, 20, 30, 40, 50};
+
+    // Accessing elements of the array
+    std::cout &lt;&lt; "First element: " &lt;&lt; numbers[0] &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Third element: " &lt;&lt; numbers[2] &lt;&lt; std::endl;
+
+    // Modifying elements of the array
+    numbers[1] = 25;
+
+    // Printing all elements of the array using a loop
+    std::cout &lt;&lt; "Elements of the array:" &lt;&lt; std::endl;
+    for (int i = 0; i &lt; 5; i++) {
+        std::cout &lt;&lt; numbers[i] &lt;&lt; " ";
+    }
+    std::cout &lt;&lt; std::endl;
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+
+    </div>
+
+    <p>In this example:</p>
+
+    <ul>
+      <li>We declare and initialize an array <code>numbers</code> with five elements.</li>
+      <li>We access elements of the array using index notation <code>numbers[index]</code>.</li>
+      <li>We modify an element of the array by assigning a new value to it.</li>
+      <li>We use a loop to print all elements of the array.</li>
+    </ul>
+
+    <p>Arrays in C++ are zero-indexed, meaning the first element has an index of 0, the second element has an index of
+      1, and so on.</p>
+
+    <p>In addition to single-dimensional arrays, C++ also supports multi-dimensional arrays and dynamic arrays using
+      pointers.</p>
+      <div class="video-container">
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/PyTK_g1l8V8?si=guD_ZMuID_ADwade" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+            </code>
+        </div>
+
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/40x3FCbeEKk?si=InfpmdlV5CL7YV8B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            </code>
+        </div>
+    </div>
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>Pointers in C++</h2>
+    <p>In C++, a pointer is a variable that stores the memory address of another variable. Pointers provide a way to
+      directly access and manipulate memory locations, which can be useful for dynamic memory allocation, passing
+      parameters by reference, and working with arrays and data structures.</p>
+
+    <p>The syntax to declare a pointer variable in C++ is as follows:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+data_type *pointer_name;
+    </code></pre>
+    </div>
+
+    <p>Here's an example demonstrating the declaration and usage of pointers in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    int num = 10;
+    int *ptr;
+
+    // Assigning the address of num to the pointer
+    ptr = &num;
+
+    // Accessing the value of num using the pointer
+    std::cout &lt;&lt; "Value of num: " &lt;&lt; *ptr &lt;&lt; std::endl;
+
+    // Modifying the value of num using the pointer
+    *ptr = 20;
+
+    // Printing the new value of num
+    std::cout &lt;&lt; "New value of num: " &lt;&lt; num &lt;&lt; std::endl;
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+
+    </div>
+
+    <p>In this example:</p>
+
+    <ul>
+      <li>We declare a variable <code>num</code> and a pointer <code>ptr</code> of type <code>int</code>.</li>
+      <li>We assign the address of <code>num</code> to the pointer using the <code>&</code> (address-of) operator.</li>
+      <li>We access the value of <code>num</code> using the pointer dereferencing operator <code>*</code>.</li>
+      <li>We modify the value of <code>num</code> indirectly through the pointer.</li>
+    </ul>
+
+    <p>Pointers can also be used to dynamically allocate memory using the <code>new</code> operator and deallocate
+      memory using the <code>delete</code> operator.</p>
+      <div class="video-container">
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/EvYmTCx9BFs?si=teeYOmReBHvzC0Gl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+            </code>
+        </div>
+
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/gHxmAgedyDk?si=FKDUR-kfMVPcwZDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+            </code>
+        </div>
+    </div>
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>Object and Class in C++</h2>
+    <p>In C++, a class is a blueprint for creating objects. It defines the properties (data members) and behaviors
+      (member functions) of objects of that type. An object is an instance of a class, which represents a specific
+      entity in a program.</p>
+
+    <p>The syntax to define a class in C++ is as follows:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+class ClassName {
+    // Data members (properties)
+    data_type member1;
+    data_type member2;
+    // ...
+
+public:
+    // Member functions (behaviors)
+    return_type memberFunction1(parameter_list) {
+        // Function body
+    }
+    return_type memberFunction2(parameter_list) {
+        // Function body
+    }
+    // ...
+};
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+
+    </div>
+
+    <p>Here's an example demonstrating the declaration and usage of a class and objects in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+// Define a class
+class Rectangle {
+private:
+    // Data members (private by default)
+    int length;
+    int width;
+
+public:
+    // Constructor
+    Rectangle(int l, int w) {
+        length = l;
+        width = w;
+    }
+
+    // Member function to calculate area
+    int area() {
+        return length * width;
+    }
+};
+
+int main() {
+    // Create objects of the class
+    Rectangle rect1(5, 3);
+    Rectangle rect2(4, 6);
+
+    // Call member function to calculate area
+    std::cout &lt;&lt; "Area of rect1: " &lt;&lt; rect1.area() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Area of rect2: " &lt;&lt; rect2.area() &lt;&lt; std::endl;
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+
+    </div>
+
+    <p>In this example:</p>
+
+    <ul>
+      <li>We define a class <code>Rectangle</code> with data members <code>length</code> and <code>width</code> and a
+        member function <code>area()</code> to calculate the area of a rectangle.</li>
+      <li>We create two objects <code>rect1</code> and <code>rect2</code> of the class <code>Rectangle</code>.</li>
+      <li>We call the member function <code>area()</code> on each object to calculate the area of the rectangles.</li>
+    </ul>
+
+    <p>Classes in C++ support encapsulation, inheritance, and polymorphism, providing powerful tools for building
+      complex systems.</p>
+      <div class="video-container">
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YNuFnhRMoVs?si=XglQeGscj6fNtal7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            </code>
+        </div>
+
+        <div class="code-block">
+            <code class="java">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/dkk0e1x3nSU?si=DQemckXpq6aPv4qR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </code>
+        </div>
+    </div>
+    <!-- End here -->
+    <!-- Start from here -->
+    <h2>Constructor in C++</h2>
+    <p>In C++, a constructor is a special member function of a class that is automatically called when an object of the
+      class is created. It is used to initialize the object's data members and allocate any necessary resources.</p>
+
+    <p>The syntax to define a constructor in C++ is as follows:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+class ClassName {
+public:
+    // Constructor
+    ClassName(parameter_list) {
+        // Initialize data members and allocate resources
+    }
+};
+    </code></pre>
+    </div>
+
+    <p>Here's an example demonstrating the declaration and usage of a constructor in C++:</p>
+
+    <div class="code-block">
+      <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+// Define a class
+class Rectangle {
+private:
+    // Data members
+    int length;
+    int width;
+
+public:
+    // Constructor with parameters
+    Rectangle(int l, int w) {
+        length = l;
+        width = w;
+    }
+
+    // Member function to calculate area
+    int area() {
+        return length * width;
+    }
+};
+
+int main() {
+    // Create an object of the class with constructor
+    Rectangle rect(5, 3);
+
+    // Call member function to calculate area
+    std::cout &lt;&lt; "Area of rect: " &lt;&lt; rect.area() &lt;&lt; std::endl;
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+    </div>
+
+    <p>In this example:</p>
+
+    <ul>
+      <li>We define a class <code>Rectangle</code> with data members <code>length</code> and <code>width</code> and a
+        constructor <code>Rectangle(int l, int w)</code> to initialize the data members with the given length and width.
+      </li>
+      <li>When we create an o
+        <div class="video-container">
+          <div class="code-block">
+              <code class="java">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EEJUPXFKe8Q?si=vKzOPJusDWag4PAP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+              </code>
+          </div>
+
+          <div class="code-block">
+              <code class="java">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mHslbPp7Qis?si=dBbkD_q6kMvTm6Xn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+              </code>
+          </div>
+      </div>
+        <!-- Start from here -->
+
+        <h2>Inheritance in C++</h2>
+        <p>In C++, inheritance is a mechanism by which a class can inherit properties and behavior (member variables and
+          member functions) from another class. The class that is inherited from is called the base class or parent
+          class, and the class that inherits is called the derived class or child class.</p>
+
+        <p>The syntax to define a derived class in C++ using inheritance is as follows:</p>
+
+        <div class="code-block">
+          <pre><code class="cpp">
+class DerivedClassName : access_specifier BaseClassName {
+    // Additional member variables and functions
+};
+    </code></pre>
+        </div>
+
+        <p>Here's an example demonstrating inheritance in C++:</p>
+
+        <div class="code-block">
+          <pre><code class="cpp">
+#include &lt;iostream&gt;
+
+// Base class
+class Shape {
+protected:
+    int width;
+    int height;
+
+public:
+    Shape(int w, int h) {
+        width = w;
+        height = h;
+    }
+
+    void setWidth(int w) {
+        width = w;
+    }
+
+    void setHeight(int h) {
+        height = h;
+    }
+};
+
+// Derived class
+class Rectangle : public Shape {
+public:
+    Rectangle(int w, int h) : Shape(w, h) {}
+
+    int area() {
+        return width * height;
+    }
+};
+
+int main() {
+    Rectangle rect(5, 3);
+
+    std::cout << "Area of rectangle: " << rect.area() << std::endl;
+
+    return 0;
+}
+    </code></pre>
+    <button class="copy-button">Copy Code</button>
+
+        </div>
+
+        <p>In this example:</p>
+
+        <ul>
+          <li>We define a base class <code>Shape</code> with member variables <code>width</code> and <code>height</code>
+            and member functions to set their values.</li>
+          <li>We define a derived class <code>Rectangle</code> that inherits from the base class <code>Shape</code>.
+          </li>
+          <li>The derived class <code>Rectangle</code> has access to the member variables and functions of the base
+            class <code>Shape</code>.</li>
+          <li>We create an object <code>rect</code> of the derived class <code>Rectangle</code> and call its member
+            function <code>area()</code> to calculate the area.</li>
+        </ul>
+
+        <p>Inheritance in C++ supports single inheritance, multiple inheritance, hierarchical inheritance, and
+          multilevel inheritance, providing flexibility in designing class hierarchies.</p>
+          <div class="video-container">
+            <div class="code-block">
+                <code class="java">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZfEp71tIec?si=PhtoX1POhd9a3TlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                </code>
+            </div>
+
+            <div class="code-block">
+                <code class="java">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/RO1ZYW9NAzg?si=-rWgFQCmFYBvpUpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </code>
+            </div>
+        </div>
+        <!-- End here -->
+
+        <!-- Add more C++ content as needed -->
+  </div>
+  <script>
+    // Function to copy text to clipboard
+    function copyToClipboard(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
+
+    // Add event listeners to copy buttons
+    document.querySelectorAll('.copy-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const codeBlock = button.previousElementSibling.querySelector('code');
+        copyToClipboard(codeBlock.innerText);
+        alert('Code copied to clipboard!');
+      });
+    });
+  </script>
+</body>
+
+</html>
